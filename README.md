@@ -4,6 +4,28 @@
 
 This is a [Personium](http://personium.io)'s Engine extension for sending SMTP emails.
 
+## Usage
+
+```
+    var mailObj = {
+        "to":[{"name":"John Doe","address":"john.doe@example.com"}],
+        "from": {
+            "address" : "admin@example.com",
+            "name"    : "Admin Office"
+        },
+        "reply-to": {
+            "address" : "admin@example.com",
+            "name"    : "Admin Office"
+        },
+        "envelope-from": "admin@example.com",
+        "subject": "Greetings",
+        "text": "Hello\n Thank you!",
+        "charset": "utf-8"
+    };
+    var sender = new dc.extension.MailSender();
+    sender.send(mailObj);
+```
+
 ## License
 
 ```
