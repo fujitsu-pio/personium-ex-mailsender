@@ -6,7 +6,7 @@
   <version>1.5.0</version>
   <packaging>jar</packaging>
 
-  <name>dc1-engine-extension-mailsender</name>
+  <name>personium-ex-mailsender</name>
   <url>http://maven.apache.org</url>
   <licenses>
     <license>
@@ -72,8 +72,8 @@
 
   <repositories>
     <repository>
-      <id>dc.fujitsu.com</id>
-      <name>Fujitsu Repository</name>
+      <id>personium.io</id>
+      <name>personium.io</name>
       <url>http://personium.io/mvnrepo</url>
     </repository>
   </repositories>
@@ -125,17 +125,9 @@
         <configuration>
           <header>../../copyright.txt</header>
           <excludes>
-            <exclude>.checkstyle</exclude>
             <exclude>checkstyle.header</exclude>
-            <exclude>checkstyle_maven.properties</exclude>
-            <exclude>checkstyle-suppressions.xml</exclude>
-            <exclude>dc-checks.xml</exclude>
-            <exclude>findbugs-exclude.xml</exclude>
             <exclude>pom.xml</exclude>
-            <exclude>NOTICE.txt</exclude>
             <exclude>LICENSE.txt</exclude>
-            <exclude>CHANGES.txt</exclude>
-            <exclude>logback.xml</exclude>
           </excludes>
         </configuration>
       </plugin>
