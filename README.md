@@ -22,7 +22,7 @@ This is a [Personium](http://personium.io)'s Engine extension for sending SMTP e
         "text": "Hello\n Thank you!",
         "charset": "utf-8"
     };
-    var sender = new dc.extension.MailSender();
+    var sender = new _p.extension.MailSender();
     sender.send(mailObj);
 ```
 

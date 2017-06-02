@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fujitsu.dc.engine.extension.mailsender;
+package io.personium.engine.extension.mailsender;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -38,8 +38,8 @@ import org.mozilla.javascript.NativeObject;
 import org.mozilla.javascript.annotations.JSConstructor;
 import org.mozilla.javascript.annotations.JSFunction;
 
-import com.fujitsu.dc.engine.extension.support.AbstractExtensionScriptableObject;
-import com.fujitsu.dc.engine.extension.support.ExtensionErrorConstructor;
+import io.personium.engine.extension.support.AbstractExtensionScriptableObject;
+import io.personium.engine.extension.support.ExtensionErrorConstructor;
 
 /**
  * Engine-Extension メール送信機能.
@@ -50,8 +50,8 @@ public class Ext_MailSender extends AbstractExtensionScriptableObject {
     private static final String JAVAMAIL_SMTP_FROM_KEY = "mail.smtp.from";
     private static final String JAVAMAIL_SMTP_PORT_KEY = "mail.smtp.port";
     private static final String JAVAMAIL_SMTP_HOST_KEY = "mail.smtp.host";
-    private static final String EXT_MAILSENDER_SMTP_HOST = "com.fujitsu.dc.engine.extension.MailSender.smtp.host";
-    private static final String EXT_MAILSENDER_SMTP_PORT = "com.fujitsu.dc.engine.extension.MailSender.smtp.port";
+    private static final String EXT_MAILSENDER_SMTP_HOST = "io.personium.engine.extension.MailSender.smtp.host";
+    private static final String EXT_MAILSENDER_SMTP_PORT = "io.personium.engine.extension.MailSender.smtp.port";
 
     private static final String DEFAULT_SMTP_PORT = "25";
 

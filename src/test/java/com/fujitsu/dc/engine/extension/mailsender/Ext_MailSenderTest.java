@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fujitsu.dc.engine.extension.mailsender;
+package io.personium.engine.extension.mailsender;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
@@ -37,7 +37,7 @@ import org.mozilla.javascript.NativeObject;
 
 import com.dumbster.smtp.SimpleSmtpServer;
 import com.dumbster.smtp.SmtpMessage;
-import com.fujitsu.dc.engine.extension.support.ExtensionLogger;
+import io.personium.engine.extension.support.ExtensionLogger;
 
 public class Ext_MailSenderTest {
 
