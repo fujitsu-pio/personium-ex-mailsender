@@ -7,23 +7,30 @@ This is a [Personium](http://personium.io)'s Engine extension for sending SMTP e
 ## Usage
 
 ```
+function(request) {
     var mailObj = {
         "to":[{"name":"John Doe","address":"john.doe@example.com"}],
         "from": {
-            "address" : "admin@example.com",
+            "address" : "admin@personium.io",
             "name"    : "Admin Office"
         },
-        "reply-to": {
-            "address" : "admin@example.com",
+        "reply-to": [{
+            "address" : "admin@personium.io",
             "name"    : "Admin Office"
-        },
-        "envelope-from": "admin@example.com",
+        }],
+        "envelope-from": "admin@personium.io",
         "subject": "Greetings",
         "text": "Hello\n Thank you!",
-        "charset": "utf-8"
+        "charset": "ISO-2022-JP"
     };
     var sender = new _p.extension.MailSender();
     sender.send(mailObj);
+    return {
+        status : 200,
+        headers : {"Content-Type":"application/json"},
+        body : ['Mailsend Complete!']
+    };
+}
 ```
 
 ## License
